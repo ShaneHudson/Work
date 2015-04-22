@@ -1,0 +1,22 @@
+.blocks li  {
+	color: #fff;
+	//box-shadow: 0 0 1em rgba(0,0,0,0.1);
+	display: block;
+	margin-bottom: $margin-bottom;
+	min-height: 150px;
+	padding: 1em;
+}
+
+.blocks p  {
+	padding: 0;
+}
+
+.blocks li:nth-child(odd)  {
+	@extend .push-right;
+	background-color: #a4bfa5;
+}
+
+.blocks li:nth-child(even)  {
+	@extend .pull-left;
+	background-color: #8393a2;
+}

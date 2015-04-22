@@ -1,0 +1,77 @@
+$font-family: "Source Sans Pro", helvetica, sans-serif;
+$text-colour: #666;
+$text-colour-alt: #333;
+
+$text-size: 1.125em; // 18 / 16
+
+$margin-bottom: 1.875em; // 30 / 16 for vertical rhythm 
+
+
+body  {
+	-webkit-font-smoothing: antialiased;
+	color: $text-colour;
+	font-family: $font-family;
+	font-weight: 300;
+	line-height: 1.5;
+}
+
+em  {
+	color: $text-colour-alt;
+}
+
+h1  {
+	font-size: 2em;
+}
+
+h2  {
+	font-size: 2em;
+	color: $text-colour-alt;
+}
+
+
+h3  {
+	font-size: 3em;
+}
+
+a  {
+	// Better Underlines by Benjamin Hollway and Shane Hudson
+	// https://github.com/nothingrandom/betterunderlines.css
+	color: $text-colour;
+	text-decoration: none;
+	background-image: linear-gradient(to top,
+		transparent 10%,
+		currentColor 10%,
+		currentColor 14%,
+		transparent 10%
+	);
+	text-shadow:
+		.025em 0 0 #fff,
+		-.025em 0 0 #fff,
+		.05em 0 0 #fff,
+		-.05em 0 0 #fff,
+		.075em 0 0 #fff,
+		-.075em 0 0 #fff;
+}
+
+p {
+	-webkit-font-smoothing: initial;
+	font-size: $text-size;
+	padding-top: $margin-bottom;
+}
+
+footer p {
+	padding: 0;
+}
+
+blockquote  {
+	text-align: center; 
+
+	p {
+		font-family: "Georgia", serif;
+		font-size: 1.5em;
+	}
+}
+
+cite  {
+	font-weight: 400;
+}
