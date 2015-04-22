@@ -4,8 +4,21 @@ $text-colour-alt: #333;
 
 $text-size: 1.125em; // 18 / 16
 
-$margin-bottom: 1.875em; // 30 / 16 for vertical rhythm 
+$margin-bottom: 1.875em; // 30 / 16 for vertical rhythm
 
+/* source-sans-pro-300 - latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: url('fonts/source-sans-pro-v9-latin-300.eot'); /* IE9 Compat Modes */
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'),
+       url('fonts/source-sans-pro-v9-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/source-sans-pro-v9-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/source-sans-pro-v9-latin-300.woff') format('woff'), /* Modern Browsers */
+       url('fonts/source-sans-pro-v9-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('fonts/source-sans-pro-v9-latin-300.svg#SourceSansPro') format('svg'); /* Legacy iOS */
+}
 
 body  {
 	-webkit-font-smoothing: antialiased;
@@ -64,7 +77,7 @@ footer p {
 }
 
 blockquote  {
-	text-align: center; 
+	text-align: center;
 
 	p {
 		font-family: "Georgia", serif;
