@@ -1,0 +1,229 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* source-sans-pro-300 - latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: url("fonts/source-sans-pro-v9-latin-300.eot");
+  /* IE9 Compat Modes */
+  src: local("Source Sans Pro Light"), local("SourceSansPro-Light"), url("fonts/source-sans-pro-v9-latin-300.eot?#iefix") format("embedded-opentype"), url("fonts/source-sans-pro-v9-latin-300.woff2") format("woff2"), url("fonts/source-sans-pro-v9-latin-300.woff") format("woff"), url("fonts/source-sans-pro-v9-latin-300.ttf") format("truetype"), url("fonts/source-sans-pro-v9-latin-300.svg#SourceSansPro") format("svg");
+  /* Legacy iOS */ }
+body {
+  -webkit-font-smoothing: antialiased;
+  color: #666;
+  font-family: "Source Sans Pro", helvetica, sans-serif;
+  font-weight: 300;
+  line-height: 1.5; }
+
+em {
+  color: #333; }
+
+h1 {
+  font-size: 2em; }
+
+h2 {
+  font-size: 2em;
+  color: #333; }
+
+h3 {
+  font-size: 3em; }
+
+a {
+  color: #666;
+  text-decoration: none;
+  background-image: linear-gradient(to top, transparent 10%, currentColor 10%, currentColor 14%, transparent 10%);
+  text-shadow: .025em 0 0 #fff, -.025em 0 0 #fff, .05em 0 0 #fff, -.05em 0 0 #fff, .075em 0 0 #fff, -.075em 0 0 #fff; }
+
+p {
+  -webkit-font-smoothing: initial;
+  font-size: 1.125em;
+  line-height: 1.7;
+  padding-top: 1.875em; }
+
+footer p {
+  padding: 0; }
+
+blockquote {
+  text-align: center; }
+  blockquote p {
+    font-family: "Georgia", serif;
+    font-size: 1.5em; }
+
+cite {
+  font-weight: 400; }
+
+label {
+  color: #666;
+  font-size: 2em; }
+
+.media, .headings {
+  display: flex;
+  align-items: flex-start; }
+
+.media-body, .sub-heading {
+  flex: 1; }
+
+.media-body:last-child, .sub-heading:last-child {
+  margin-bottom: 0; }
+
+.media--center {
+  align-items: center; }
+
+.media--reverse > .media-side, .media--reverse > h2 {
+  order: 1; }
+
+.pull-left, .blocks > :nth-child(even) {
+  margin-right: 2.35em; }
+
+.push-right, .blocks > :nth-child(odd) {
+  margin-left: 2.35em; }
+
+body {
+  padding-top: 2em; }
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 900px; }
+
+.container {
+  margin: 2.5em; }
+
+.sub-heading {
+  padding-left: 1em;
+  padding-top: 0.875em; }
+
+footer {
+  clear: both;
+  text-align: center;
+  padding: 1.5em 0; }
+
+@media (min-width: 150em) {
+  .main-wrapper {
+    max-width: 115em;
+    margin: 0 auto; }
+
+  .wrapper {
+    float: left; }
+
+  .second {
+    padding-left: 10em; } }
+.blocks > * {
+  color: #fff;
+  display: block;
+  margin-bottom: 1.875em;
+  min-height: 150px;
+  position: relative; }
+
+.blocks a {
+  background-image: none;
+  color: #fff;
+  display: block;
+  text-shadow: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 1em; }
+
+.blocks a:hover,
+.blocks a:focus {
+  font-weight: bold; }
+
+.blocks a h3::after {
+  content: ">>";
+  font-size: 0.5em;
+  font-weight: bold;
+  padding-left: 10px;
+  vertical-align: middle; }
+
+.blocks--no-links li {
+  padding: 1em; }
+
+.blocks p {
+  padding: 0; }
+
+.blocks > :nth-child(odd) {
+  background-color: #a4bfa5; }
+
+.blocks > :nth-child(even) {
+  background-color: #8393a2; }
+
+.contact {
+  padding: 0 1em;
+  margin-bottom: 20px; }
+  .contact div {
+    text-align: left; }
+  .contact input {
+    border: 1px solid #ccc;
+    color: #666;
+    height: 50px;
+    font-size: 1em;
+    padding: 0 1em;
+    margin-bottom: 20px;
+    width: 100%; }
+  .contact label {
+    display: block;
+    margin-bottom: 10px; }
+  .contact textarea {
+    border: 1px solid #ccc;
+    color: #666;
+    font-size: 1em;
+    line-height: 1.5em;
+    min-height: 200px;
+    padding: 1em;
+    width: 100%; }
+  .contact input[type=submit] {
+    background-color: #a4bfa5;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 10px; }
+
+* {
+  box-sizing: border-box; }
+
+/*# sourceMappingURL=style.css.map */

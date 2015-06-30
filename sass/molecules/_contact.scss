@@ -1,0 +1,42 @@
+.contact  {
+	padding: 0 1em;
+	margin-bottom: 20px; 
+
+	div  {
+		text-align: left;
+	}
+
+	input  {
+		border: 1px solid #ccc;
+		color: #666;
+    		height: 50px;
+		font-size: 1em;
+    		padding: 0 1em;
+		margin-bottom: 20px;
+		width: 100%;
+	}
+
+	label  {
+		display: block;
+		margin-bottom: 10px;
+	}
+
+	textarea  {	
+   		border: 1px solid #ccc;	
+		color: #666;
+		font-size: 1em;
+		line-height: 1.5em;
+		min-height: 200px;
+		padding: 1em;
+		width: 100%;
+	}
+
+	input[type=submit]  {
+   		background-color: #a4bfa5;	
+		color: #fff;
+		cursor: pointer;	
+		margin-top: 10px;
+	}
+}
+
+
