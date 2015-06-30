@@ -11,7 +11,7 @@ $margin-bottom: 1.875em; // 30 / 16 for vertical rhythm
   font-family: 'Source Sans Pro';
   font-style: normal;
   font-weight: 300;
-  src: url('fonts/source-sans-pro-v9-latin-300.eot'); /* IE9 Compat Modes */
+  src: url('fonts/source-sans-pro-v9-latin-300.eot'); /* IE9 Compat Modes */ 
   src: local('Source Sans Pro Light'), local('SourceSansPro-Light'),
        url('fonts/source-sans-pro-v9-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
        url('fonts/source-sans-pro-v9-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
@@ -46,7 +46,8 @@ h3  {
 	font-size: 3em;
 }
 
-a  {
+a,
+%underline  {
 	// Better Underlines by Benjamin Hollway and Shane Hudson
 	// https://github.com/nothingrandom/betterunderlines.css
 	color: $text-colour;
@@ -69,6 +70,7 @@ a  {
 p {
 	-webkit-font-smoothing: initial;
 	font-size: $text-size;
+	line-height: 1.7;
 	padding-top: $margin-bottom;
 }
 
@@ -87,4 +89,9 @@ blockquote  {
 
 cite  {
 	font-weight: 400;
+}
+
+label  {
+	color: $text-colour;
+	font-size: 2em;
 }
